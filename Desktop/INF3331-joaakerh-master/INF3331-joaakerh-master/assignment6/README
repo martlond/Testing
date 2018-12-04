@@ -1,0 +1,29 @@
+6.3 - 6.5 is not implemented
+
+6.1
+Running:
+python temperature_CO2_plotter.py
+
+Contains a class with methods for plotting temperature or CO2
+The temperature plotting method takes the following inputs:
+    Month, Year start, Year end,
+    Y axis min value (optional),
+    Y axis max value (optional),
+    show (optional boolean)
+
+If show is False the plot is only saved, if it is True it is also displayed
+
+The CO2 plotting method takes the same inputs except it does not take month as
+the first parameter.
+
+6.2
+Running:
+python web_visualization.py
+
+First generates plots and saves them to the static folder.
+Uses the years 1816 - 2012 for both temperature and CO2
+
+Web server has the following layout:
+Index page with links to two pages, temperature and co2
+    Temperature page loads the temperature plot and displays it
+    CO2 page loads the CO2 plot and displays it
